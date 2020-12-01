@@ -10,89 +10,21 @@
     }
 }
 
-header {
 
-    .top-panel {
-        margin: 40px 0 0;
 
-        .logo {
-            position: relative;
-            height: 32px;
-            width: 60px;
+.comment {
+    display: flex;
 
-            &__circle {
-                @include square(32px, 50px);
-                position: absolute;
-            }
-
-            &__circle_back {
-                background: $color-blue;
-            }
-
-            &__circle_front {
-                font-size: 20px;
-                line-height: 28px;
-                letter-spacing: 0.04em;
-                color: $color-blue;
-                background: #ffffff;
-                border: 3px solid $color-blue;
-            }
-        }
+    &__item {
+        display: flex;
+        width: 300px;
+        height: auto;
     }
 
-    .information {
-        margin: 100px 0 0;
-        
-        @include for-size(sm) {
-            max-width: 100%;
-            background: green;
-        }
-
-        @include for-size(lg) {
-            max-width: 420px;
-            background: red;
-        }
-        
-
-        &__title {
-            color: $color-blue-dark;
-            font-size: 64px;
-            line-height: 74px;
-            letter-spacing: 0.04em;
-        }
-
-        &__description {
-            margin: $padding-norm 0 0;
-            font-size: 16px;
-            line-height: 26px;
-            letter-spacing: 0.05em;
-            color: $color-blue-dark;
-            opacity: 0.6;
-        }
-
-        &__button {
-            margin: 70px 0 0 0;
-            background: $color-blue-light;
-            box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
-            border-radius: 10px;
-            font-size: 16px;
-            line-height: 26px;
-            text-align: center;
-            letter-spacing: 0.04em;
-            color: #ffffff;
-        }
-
+    &__wrapper-img {
+        width: 80px;        
     }
-
-    .menu {
-        &__content {
-            display: none
-        }
-    
-        &:hover {
-            &__content {
-                display: block
-            }
-        }
+    &__img {
+        width: 100%;
     }
 }
